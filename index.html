@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElevateWeb | Développement Web pour Petites Entreprises</title>
-</head>
+    <head>
+        <link rel="stylesheet" href="styles.css" media="all" onload="this.media='all'">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ElevateWeb | Développement Web pour Petites Entreprises</title>
+
+        <meta name="description" content="ElevateWeb - Création de sites web professionnels à prix abordables pour petites entreprises. Sites vitrines, e-commerce et landing pages optimisés SEO à partir de 399€.">
+        <meta name="keywords" content="création site web, développement web, site internet pas cher, site vitrine PME, webdesign, référencement SEO, site internet abordable">
+        <meta name="author" content="M. Blanchard">
+        <meta name="robots" content="index, follow">
+        
+        <meta property="og:title" content="ElevateWeb | Sites Web Professionnels à Prix Abordables">
+        <meta property="og:description" content="Propulsez votre petite entreprise vers le succès numérique avec des solutions web sur mesure et à des tarifs exceptionnellement compétitifs.">
+        <meta property="og:image" content="https://votresite.fr/images/og-image.jpg">
+        <meta property="og:url" content="https://www.elevateweb.fr">
+        <meta property="og:type" content="website">
+        
+        <meta name="twitter:card" content="summary_large_image">
+        
+        <link rel="icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.elevateweb.fr">
+    </head>
 <body>
     <header>
         <div class="container">
             <div class="nav">
                 <div class="logo">Elevate<span>Web</span></div>
-                <nav>
+                <nav role="navigation" aria-label="Menu principal">
                     <ul>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#pricing">Tarifs</a></li>
@@ -25,7 +44,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" aria-label="Introduction">
         <div class="container">
             <h1>Des sites web professionnels à prix abordables</h1>
             <p>ElevateWeb propulse votre petite entreprise vers le succès numérique avec des solutions web sur mesure et à des tarifs exceptionnellement compétitifs.</p>
@@ -235,7 +254,7 @@
         <div class="container">
             <div class="about">
                 <div class="about-img">
-                    <img src="/api/placeholder/600/400" alt="Blanchard d'ElevateWeb">
+                    <img src="/images/blanchard-fondateur-elevateweb.jpg" alt="M. Blanchard, fondateur d'ElevateWeb spécialiste en création de sites web pour PME" width="600" height="400" loading="lazy">
                 </div>
                 <div class="about-content">
                     <h2>À propos de nous</h2>
@@ -346,7 +365,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col">
@@ -391,6 +410,171 @@
             </div>
         </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "ElevateWeb",
+          "url": "https://www.elevateweb.fr",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.elevateweb.fr/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
+        
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "ElevateWeb",
+          "image": "https://www.elevateweb.fr/images/logo.png",
+          "url": "https://www.elevateweb.fr",
+          "telephone": "+33600000000",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Votre ville",
+            "addressRegion": "Votre région",
+            "postalCode": "12345",
+            "addressCountry": "FR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "00.00000",
+            "longitude": "00.00000"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/elevateweb",
+            "https://www.instagram.com/elevateweb",
+            "https://www.linkedin.com/company/elevateweb"
+          ],
+          "priceRange": "€€",
+          "description": "ElevateWeb propulse votre petite entreprise vers le succès numérique avec des solutions web sur mesure et à des tarifs exceptionnellement compétitifs.",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Site Vitrine Starter",
+              "price": "399",
+              "priceCurrency": "EUR",
+              "description": "Site 5 pages avec design responsive et optimisation SEO de base"
+            },
+            {
+              "@type": "Offer",
+              "name": "Site Web Business",
+              "price": "799",
+              "priceCurrency": "EUR",
+              "description": "Site jusqu'à 10 pages avec design responsive premium et optimisation SEO avancée"
+            },
+            {
+              "@type": "Offer",
+              "name": "Site Web Premium",
+              "price": "1299",
+              "priceCurrency": "EUR",
+              "description": "Site jusqu'à 20 pages avec design exclusif sur mesure et stratégie SEO personnalisée"
+            }
+          ]
+        }
+        </script>
+        
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quel est le délai de livraison pour un site web?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nous livrons généralement nos sites web en 15 jours ouvrés après validation de la maquette."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quelles garanties offrez-vous sur vos sites web?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nous offrons une garantie satisfaction de 30 jours, une garantie délai, une garantie sécurité et une garantie responsive pour tous nos sites web."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Proposez-vous des services de maintenance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, nous assurons la maintenance et les mises à jour de votre site pour garantir ses performances et sa sécurité."
+              }
+            }
+          ]
+        }
+        </script>
+        
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Sites Vitrines",
+              "url": "https://www.elevateweb.fr/services#sites-vitrines"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sites Haute Performance",
+              "url": "https://www.elevateweb.fr/services#sites-haute-performance"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Responsive Design",
+              "url": "https://www.elevateweb.fr/services#responsive-design"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Référencement SEO",
+              "url": "https://www.elevateweb.fr/services#referencement-seo"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Design Sur Mesure",
+              "url": "https://www.elevateweb.fr/services#design-sur-mesure"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Maintenance",
+              "url": "https://www.elevateweb.fr/services#maintenance"
+            }
+          ]
+        }
+        </script>
 </body>
 </html>
